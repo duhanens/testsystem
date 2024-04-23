@@ -197,7 +197,7 @@
         }
 
         $('.answer').click(function() {
-            if (!canSelect) {
+            if (canSelect) {
                 var letter = $(this).data('letter');
                 var text = $(this).find('span').text();
 
